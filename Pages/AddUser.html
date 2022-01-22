@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New User</title>
+  <script defer src="../JavaScript/md5Lib.js"></script>
+  <script defer src="../JavaScript/addUser.js"></script>
+  <link rel="stylesheet" href="../Styles/LogAndSign.css">
+</head>
+
+<body>
+  <h2>Add New User</h2>
+  <form>
+    <div class="container">
+      <input id="usname" type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+      <input id="uspass" type="password" placeholder="Enter Password" name="psw" required>
+      <button type="button" onclick="addUser()">Add User</button>
+    </div>
+  </form>
+</body>
+
+</html>

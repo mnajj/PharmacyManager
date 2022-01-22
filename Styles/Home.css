@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: montserrat;
+  background-color: #ecf9ff;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #4d72c7;
+}
+
+#logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: aliceblue;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px;
+  border: #37518f;
+  text-decoration: none;
+}
+
+nav ul li a {
+  display: inline-block;
+  margin: 5px;
+  position: relative;
+  font-size: 18px;
+  padding: 5px;
+  background-color: #37518f;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#vid-con {
+  margin: auto;
+  width: 300px;
+  height: 230px;
+  border: 10px #333 solid;
+  border-radius: 5%;
+}
+
+#videoElement {
+  width: 300px;
+  height: 230px;
+}
+
+#add-itm,
+#add-inv,
+#data-viz,
+#edit {
+  background-color: #4d72c7;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 35px;
+  text-align: center;
+  color: #ffff;
+  border-color: #050505;
+}
+
+input {
+  display: block;
+  margin: 10px auto auto auto;
+  width: 30%;
+  height: 20px;
+  border: none;
+  padding: 10px;
+}
+
+#vid-con {
+  margin: 10px auto auto 300px;
+  border-color: #ffff;
+}
+
+#showscreenshot {
+  position: absolute;
+  top: 355px;
+  right: 300px;
+  width: 300px;
+  height: 230px;
+  display: inline-block;
+  border: 10px #cf4444 solid;
+  border-radius: 5%;
+}
+
+.sub-but {
+  display: block;
+  background-color: #ffff;
+  color: black;
+  padding: 14px 20px;
+  margin: 45px auto auto auto;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 80px;
+	font-weight: bold;
+}
+
+.vid-but {
+  margin-top: 10px;
+  display: inline;
+  width: 30%;
+  background-color: #ffff;
+  border: none;
+  border-radius: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+	color: #ffff;
+	text-align: center;
+  padding: 5px 5px;
+}
+
+table {
+	width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+}
+
+.main-container {
+	width: 90%;
+	margin: auto;
+}
+
+table thead tr {
+  background-color: #374b7a;
+  color: #ffffff;
+  text-align: left;
+}

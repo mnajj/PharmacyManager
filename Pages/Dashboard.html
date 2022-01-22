@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../Styles/Home.css">
+  <script defer src="../JavaScript/home.js"></script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li></li>
+      <li id="logo">Pharmacy Manger</li>
+      <span style="font-size: 45px; color: #f1f1f1;">&#x2624;</span>
+      <li>
+        <a href="../Pages/Dashboard.html" style="color: aliceblue;">Home</a>
+      </li>
+      <li>
+        <a href="../Pages/AddUser.html" style="color: aliceblue;">Add New User</a>
+      </li>
+      <li>
+        <a href="£" style="color: aliceblue;">About</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="main-container">
+    <div class="container">
+      <div id="add-itm">
+        <h2>Add Item 📦</h2>
+        <form>
+          <input id="itm-id" type="text" placeholder="Enter Id" name="itm-id" required>
+          <input id="itm-nm" type="text" placeholder="Enter Name" name="itm-nm" required>
+          <input id="itm-qnt" type="number" placeholder="Enter Quantity" name="itm-qnt" required>
+
+          <div id="vid-con">
+            <video autoplay="false" id="videoElement"></video>
+            <button class="vid-but" type="button" onclick="stopCamera();">&#9632</button>
+            <button class="vid-but" type="button" onclick="startCamera();">&#9654</button>
+            <button class="vid-but" type="button" onclick="takeScreenshot()">&#9688</button>
+            <canvas id="showscreenshot"></canvas>
+          </div>
+
+          <button class="sub-but" type="button" onclick="addItem()">Add Item</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div id="add-inv">
+      <h2>Add an Invoice 🧾</h2>
+      <form>
+        <input id="inv-date" type="text" placeholder="Enter Date" name="inv-date" required>
+        <input id="inv-cus" type="text" placeholder="Enter Customer Name" name="inv-cus" required>
+        <input id="inv-typ" type="text" placeholder="Buy/Sell" name="inv-typ" required>
+        <input id="inv-itm" type="text" placeholder="Item Quantity, Item Quantity, ..." name="inv-itm" required>
+
+        <button class="sub-but" type="button" onclick="addInvoice()">Add Invoice</button>
+      </form>
+    </div>
+    <br>
+    <div id="data-viz">
+      <h2>Data Visualization 📊</h2>
+      <div id="visualizer">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Id
+              </th>
+              <th>
+                Name
+              </th>
+              <th>
+                Quantity
+              </th>
+              <th>
+                Image
+              </th>
+              <th>
+                Actions
+              </th>
+            </tr>
+          </thead>
+          <tbody id="itemsTableBody">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br>
+    <div id="edit" style="visibility: hidden;">
+      <form>
+        <input id="edit-id" type="text" placeholder="Enter Id" name="edit-id" required>
+        <input id="edit-nm" type="text" placeholder="Enter Name" name="edit-nm" required>
+        <input id="edit-qnt" type="text" placeholder="Enter Quantity" name="edit-qnt" required>
+      </form>
+
+    </div>
+  </div>
+</body>
+
+</html>

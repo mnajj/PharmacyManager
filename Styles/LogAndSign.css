@@ -1,0 +1,36 @@
+body {
+  background-color: #ecf9ff;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #383838;
+}
+
+.container {
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.726);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  width: 40%;
+  margin: auto;
+}
+
+input {
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: 30px;
+  border: none;
+  padding: 10px;
+}
+
+button {
+  background-color: #4d72c7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
